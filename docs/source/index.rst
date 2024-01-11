@@ -1,3 +1,5 @@
+.. image:: https://github.com/bellingcat/knewkarma/assets/74001397/81454abe-7fb9-471e-beb2-c60d2bf87606
+
 Knew Karma: Reddit Data Analysis Toolkit
 ========================================
 

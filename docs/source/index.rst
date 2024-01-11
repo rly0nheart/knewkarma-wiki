@@ -1,22 +1,17 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to Knew Karma's documentation!
+======================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Knew Karma** (/nuː 'kɑːrmə/) is a **Reddit** Data Analysis Toolkit designed to provide an extensive range of functionalities for exploring and analysing Reddit data. It includes a Command-Line Interface (CLI), an Application Programming Interface (API) to enable an easy integration in other Python Projects and a Graphical User Interface (GUI) options, making it adaptable for various user preferences.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+For installation instructions, see the :doc:`installation` section, and the
+:ref:`usage` or :ref:`api` sections for usage and integration.
 
-.. note::
-
-   This project is under active development.
 
 Contents
 --------
 
 .. toctree::
 
+   installation
    usage
    api

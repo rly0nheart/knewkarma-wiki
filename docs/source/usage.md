@@ -10,7 +10,7 @@ knewkarma --help
 ```
 
 ```text
-docker run -it my-knewkarma-container --help
+docker run -t my-knewkarma-container --help
 ```
 ```text
 Usage: knewkarma [-h] [-t {hour,day,week,month,year}]

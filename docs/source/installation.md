@@ -1,5 +1,3 @@
-# Installation
-
 ## CLI & Python Library
 The CLI and/or the Python library of Knew Karma can be installed directly from [PyPI](https://pypi.org/project/knewkarma)
 ```

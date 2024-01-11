@@ -1,11 +1,12 @@
-# Integration
+# API
+## Integration
 Knew Karma exposes 5 classes; `RedditCommunity`, `RedditCommunities`, `RedditPosts`, `RedditUser` and `RedditSearch`, and from these classes you will be able access asynchronous methods which you can use to fetch various types of data from Reddit. 
 In order to successfully use the methods in your projects, you will need to have at least a basic understanding of asynchronous programming and the patience to go through the unnecessarily long list of code examples below.
 
 
 
-# Code Examples
-## Getting User Data
+## Code Examples
+### Getting User Data
 
 ```python
 import asyncio
@@ -84,7 +85,7 @@ async def async_moderated_communities():
 # asyncio.run(async_moderated_communities())
 ```
 
-## Getting Community (Subreddit) Data
+### Getting Community (Subreddit) Data
 
 ````python
 import asyncio
@@ -138,7 +139,7 @@ async def async_wiki_page(page):
 # asyncio.run(async_wiki_page(page="config/description"))
 ````
 
-## Getting Communities (Subreddits)
+### Getting Communities (Subreddits)
 
 ````python
 import asyncio
@@ -182,7 +183,7 @@ async def async_popular(limit):
 # asyncio.run(async_popular(limit=150))
 ````
 
-## Getting Posts Data
+### Getting Posts Data
 
 ```python
 import asyncio
@@ -221,7 +222,7 @@ async def async_listing(listing, limit, timeframe):
 # asyncio.run(async_listing(listing="best", limit=200, timeframe="month"))
 ```
 
-## Getting Search & Discovery
+### Getting Search & Discovery
 
 ```python
 import asyncio

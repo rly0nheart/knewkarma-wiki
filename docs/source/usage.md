@@ -14,11 +14,10 @@ docker run -t my-knewkarma-container --help
 ```text
 Usage: knewkarma [-h] [-t {hour,day,week,month,year}]
                  [-s {controversial,new,top,best,hot,rising}] [-l NUMBER]
-                 [-j FILENAME] [-c FILENAME] [-u] [-v]
+                 [-e FILETYPES] [-u] [-v]
                  {community,communities,posts,search,user} ...
 
 
-▌ Reddit Data Analysis Toolkit.
 
 Positional Arguments:
   {community,communities,posts,search,user}
@@ -36,8 +35,9 @@ Options:
   -s, --sort {controversial,new,top,best,hot,rising}
                         [bulk] sort criterion (default: all)
   -l, --limit NUMBER    [bulk] data output limit (default: 100)
-  -j, --json FILENAME   write output to a json file
-  -c, --csv FILENAME    write output to a csv file
+  -e, --export FILETYPES
+                        a comma-separated list of file types to export the
+                        output to (supported: csv,html,json,xml)
   -u, --updates         check for updates on run
   -v, --version         show program's version number and exit
 ```

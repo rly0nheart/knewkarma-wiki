@@ -1,23 +1,24 @@
 # Installation
 ## CLI & Python Library
 The CLI and/or the Python library of Knew Karma can be installed directly from [PyPI](https://pypi.org/project/knewkarma)
+> This assumes you have at least Python 3.10 or later installed on your system.
 ```
 pip install knewkarma
 ```
 
-> This assumes Python 3.10 or later is installed on your system.
-
-## Building a Docker Container
-> Ensure you have cloned the project and have the Docker Engine/Daemon running on your system.
-
-1. Move to the cloned *knewkarma* directory
+## Building a Docker Image
+1. Clone the repository to your system
+```
+git clone https://github.com/bellingcat/knewkarma.git
+``` 
+2. Move to the cloned *knewkarma* directory
 ```
 cd knewkarma
 ```
 
-2. Build the Docker container
+3. Build the image
 ```
-docker build -t my-knewkarma-container .
+docker build -t knewkarma .
 ```
 
 ## GUI

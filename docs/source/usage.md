@@ -4,12 +4,13 @@
 After installation, the *cli* instance can be called with the `knewkarma` command (or `docker run [container-name]` for
 Docker Containers)
 
+#### Pip installation
 ```text
 knewkarma --help
 ```
-
+#### Docker container
 ```text
-docker run -t my-knewkarma-container --help
+docker run -t knewkarma --help
 ```
 ```text
 Usage: knewkarma [-h] [-t {hour,day,week,month,year}]
@@ -45,14 +46,14 @@ Options:
 You can further view individual operation mode usages by calling `knewkarma` with an operation mode name and
 the `-h/--help` flag.
 
-### Community (Subreddit) Operations' Usage
-
+### Community (Subreddit) Operations Usage
+#### Pip installation
 ```text
 knewkarma community --help
 ```
-
+#### Docker container
 ```text
-docker run -it my-knewkarma-container community --help
+docker run -it knewkarma community --help
 ```
 ```text
 Usage: knewkarma community [-h] [-p] [-s KEYWORD] [-pp] [-wp WIKI_PAGE] [-wps]
@@ -73,12 +74,14 @@ Options:
   -wps, --wiki-pages    get a community's wiki pages
 ```
 
-### Communities (Subreddits) Operations' Usage
+### Communities' (Subreddits) Operations Usage
+#### Pip installation
 ```text
 knewkarma communities --help
 ```
+#### Docker container
 ```text
-docker run -it my-knewkarma-container communities --help
+docker run -it knewkarma communities --help
 ```
 ```text
 Usage: knewkarma communities [-h] [-a] [-d] [-n] [-p]
@@ -93,14 +96,14 @@ Options:
 ```
 
 
-### Posts Operations' Usage
-
+### Posts' Operations Usage
+#### Pip installation
 ```text
 knewkarma posts --help
 ```
-
+#### Docker container
 ```text
-docker run -it my-knewkarma-container posts --help
+docker run -it knewkarma posts --help
 ```
 ```text
 Usage: knewkarma posts [-h] [-n] [-f] [-l {best,controversial,popular,rising}]
@@ -114,14 +117,14 @@ Options:
                         get posts from a specified listing
 ```
 
-### Search Operations' Usage
-
+### Search Operations Usage
+#### Pip installation
 ```text
 knewkarma search --help
 ```
-
+#### Docker container
 ```text
-docker run -it my-knewkarma-container search --help
+docker run -it knewkarma search --help
 ```
 ```text
 Usage: knewkarma search [-h] [-u] [-p] [-c] query
@@ -137,14 +140,14 @@ Options:
   -c, --communities  search communities
 ```
 
-### User Operations' Usage
-
+### User Operations Usage
+#### Pip installation
 ```text
 knewkarma user --help
 ```
-
+#### Docker container
 ```text
-docker run -it my-knewkarma-container user --help
+docker run -it knewkarma user --help
 ```
 ```text
 Usage: knewkarma user [-h] [-p] [-c] [-o] [-pp] [-sp KEYWORD] [-sc KEYWORD]

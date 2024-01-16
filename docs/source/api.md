@@ -139,7 +139,7 @@ async def async_wiki_page(page):
 # asyncio.run(async_wiki_page(page="config/description"))
 ````
 
-### Getting Communities (Subreddits)
+### Getting Communities' (Subreddits) Data
 
 ````python
 import asyncio
@@ -183,7 +183,7 @@ async def async_popular(limit):
 # asyncio.run(async_popular(limit=150))
 ````
 
-### Getting Posts Data
+### Getting Posts' Data
 
 ```python
 import asyncio
@@ -222,7 +222,7 @@ async def async_listing(listing, limit, timeframe):
 # asyncio.run(async_listing(listing="best", limit=200, timeframe="month"))
 ```
 
-### Getting Search & Discovery
+### Search & Discovery
 
 ```python
 import asyncio

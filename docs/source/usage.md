@@ -4,6 +4,14 @@
 After installation, the *cli* instance can be called with the `knewkarma` command (or `docker run [container-name]` for
 Docker Containers)
 
+
+```commandline
+knewkarma --help
+```
+
+```commandline
+docker run -t my-knewkarma-container --help
+```
 #### Pip installation
 ```text
 knewkarma --help
@@ -12,7 +20,7 @@ knewkarma --help
 ```text
 docker run -t knewkarma --help
 ```
-```text
+```commandline
 Usage: knewkarma [-h] [-t {hour,day,week,month,year}]
                  [-s {controversial,new,top,best,hot,rising}] [-l NUMBER]
                  [-e FILETYPES] [-u] [-v]
@@ -46,16 +54,25 @@ Options:
 You can further view individual operation mode usages by calling `knewkarma` with an operation mode name and
 the `-h/--help` flag.
 
+### Community (Subreddit) Operations' Usage
+
+```commandline
+knewkarma community --help
+```
+
+```commandline
+docker run -it my-knewkarma-container community --help
+=======
 ### Community (Subreddit) Operations Usage
 #### Pip installation
 ```text
 knewkarma community --help
 ```
 #### Docker container
-```text
+```commandline
 docker run -it knewkarma community --help
 ```
-```text
+```commandline
 Usage: knewkarma community [-h] [-p] [-s KEYWORD] [-pp] [-wp WIKI_PAGE] [-wps]
                            community
 
@@ -74,16 +91,23 @@ Options:
   -wps, --wiki-pages    get a community's wiki pages
 ```
 
+### Communities (Subreddits) Operations' Usage
+```commandline
+knewkarma communities --help
+```
+```commandline
+docker run -it my-knewkarma-container communities --help
+=======
 ### Communities' (Subreddits) Operations Usage
 #### Pip installation
 ```text
 knewkarma communities --help
 ```
 #### Docker container
-```text
+```commandline
 docker run -it knewkarma communities --help
 ```
-```text
+```commandline
 Usage: knewkarma communities [-h] [-a] [-d] [-n] [-p]
 
 
@@ -95,17 +119,40 @@ Options:
   -p, --popular  get popular communities
 ```
 
+### Post Operations' Usage
+```commandline
+knewkarma post --help
+```
+```commandline
+Positional Arguments:
+  id              post id
+  community       post source community
 
+Options:
+  -h, --help      show this help message and exit
+  -p, --profile   get post 'profile' data
+  -c, --comments  get post comments
+
+```
+### Posts Operations' Usage
+
+```commandline
+knewkarma posts --help
+```
+
+```commandline
+docker run -it my-knewkarma-container posts --help
+=======
 ### Posts' Operations Usage
 #### Pip installation
 ```text
 knewkarma posts --help
 ```
 #### Docker container
-```text
+```commandline
 docker run -it knewkarma posts --help
 ```
-```text
+```commandline
 Usage: knewkarma posts [-h] [-n] [-f] [-l {best,controversial,popular,rising}]
 
 
@@ -117,6 +164,15 @@ Options:
                         get posts from a specified listing
 ```
 
+### Search Operations' Usage
+
+```commandline
+knewkarma search --help
+```
+
+```commandline
+docker run -it my-knewkarma-container search --help
+=======
 ### Search Operations Usage
 #### Pip installation
 ```text
@@ -126,7 +182,7 @@ knewkarma search --help
 ```text
 docker run -it knewkarma search --help
 ```
-```text
+```commandline
 Usage: knewkarma search [-h] [-u] [-p] [-c] query
 
 
@@ -140,6 +196,15 @@ Options:
   -c, --communities  search communities
 ```
 
+### User Operations' Usage
+
+```commandline
+knewkarma user --help
+```
+
+```commandline
+docker run -it my-knewkarma-container user --help
+=======
 ### User Operations Usage
 #### Pip installation
 ```text
@@ -149,7 +214,7 @@ knewkarma user --help
 ```text
 docker run -it knewkarma user --help
 ```
-```text
+```commandline
 Usage: knewkarma user [-h] [-p] [-c] [-o] [-pp] [-sp KEYWORD] [-sc KEYWORD]
                       [-mc] [-tc TOP_N]
                       username

@@ -1,6 +1,6 @@
 # API
 ## Integration
-Knew Karma exposes 5 classes; `RedditCommunity`, `RedditCommunities`, `RedditPosts`, `RedditUser` and `RedditSearch`, and from these classes you will be able access asynchronous methods which you can use to fetch various types of data from Reddit. 
+Knew Karma exposes 5 classes; `RedditCommunity`, `RedditCommunities`, `RedditPost`, `RedditPosts`, `RedditUser` and `RedditSearch`, and from these classes you will be able access asynchronous methods which you can use to fetch various types of data from Reddit. 
 In order to successfully use the methods in your projects, you will need to have at least a basic understanding of asynchronous programming and the patience to go through the unnecessarily long list of code examples below.
 
 
@@ -92,7 +92,7 @@ import asyncio
 import aiohttp
 from knewkarma import RedditCommunity
 
-# Initialize RedditSub with the specified community
+# Initialise a RedditSub instance with the specified community
 community = RedditCommunity(community="MachineLearning")
 
 
@@ -146,7 +146,7 @@ import asyncio
 import aiohttp
 from knewkarma import RedditCommunities
 
-# Initialize RedditSub with the specified community
+# Initialise a RedditSub instance with the specified community
 communities = RedditCommunities()
 
 
@@ -182,7 +182,32 @@ async def async_popular(limit):
 # asyncio.run(async_new(limit=100))
 # asyncio.run(async_popular(limit=150))
 ````
+### Getting An Individual Post's Data
+```python
+import asyncio
+import aiohttp
+from knewkarma import RedditPost
 
+# Initialise a RedditPost instance with a post's ID and its source community
+post = RedditPost(id="12csg48", community="OSINT")
+
+# Get a post's 'profile' data
+async def async_profile():
+    async with aiohttp.ClientSession() as session:
+        post_profile = await post.profile(session=session)
+        print(post_profile)
+
+
+# Get a post's comments
+async def async_comments(limit):
+    async with aiohttp.ClientSession() as session:
+        post_comments = await post.comments(limit=limit, session=session)
+        print(post_comments)
+        
+
+# asyncio.run(async_profile())
+# asyncio.run(async_comments(limit=100))
+```
 ### Getting Posts' Data
 
 ```python
@@ -190,7 +215,7 @@ import asyncio
 import aiohttp
 from knewkarma import RedditPosts
 
-# Initialize RedditPosts
+# Initialise a RedditPosts instance
 posts = RedditPosts()
 
 
@@ -229,6 +254,7 @@ import asyncio
 import aiohttp
 from knewkarma import RedditSearch
 
+# Initialise a RedditSearch instance
 search = RedditSearch()
 
 
